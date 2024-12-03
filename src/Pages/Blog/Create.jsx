@@ -7,7 +7,6 @@ function Create() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const nagivate = useNavigate();
-
   const createPost = async () => {
     try {
       await database.createDocument(
